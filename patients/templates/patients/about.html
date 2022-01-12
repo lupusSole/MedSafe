@@ -1,0 +1,260 @@
+{% extends 'patients/base.html' %}
+{% block content%}
+
+
+
+{% load static %}
+
+
+<div>
+ 
+    <div class="container my-5">
+        <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+          <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+            <h1 class="display-4 fw-bold lh-1">MedSafe</h1>
+            <p class="lead animate__animated animate__flipInY ">Working with physicians, pharmacies, and health care providers to create a safer, addiction free future for patients</p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+              <button type="button" class="btn btn-success btn-lg px-4 me-md-2 fw-bold">Learn More</button>
+              <button type="button" class="btn btn-outline-success btn-lg px-4">Join</button>
+              <a type="button" href="{% url 'login' %}" class="btn btn-warning btn-lg px-4">Tester Login</a>
+              
+            </div>
+          </div>
+          <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+              <img class="rounded-lg-3" src="{% static 'images/dr1.jpg' %}" alt="landing image" width="720">
+          </div>
+        </div>
+      </div>
+    
+     
+    
+     
+
+
+  <div class="b-example-divider"></div>
+
+
+
+  
+
+  <div style="padding-left: 2%; padding-right: 2%;">
+    <hr class="featurette-divider">
+
+  <div class="row featurette">
+    <div class="col-md-7">
+      <h2 class="featurette-heading"> 60,000 Opiod Involved Overdoses <span class="text-muted">In 2019 alone.</span></h2>
+      <p class="lead">In 2019 alone, nearly 60,0000 people in North America died from opiate related overdoses. The misuse of,
+        and addiction to opiods, including over the counter(OTC) opiods is a serious national crisis that affects public health, as well
+        as socioeconomic welfare to the tune of nearly $100bn annually. These staggering costs include healthcare, lost productivity, addiction treatment,
+        and criminal justice involvment. These numbers may double in the next decade alone*. 
+        Anyone who takes opiods is at risk of developing addiction. Your personal history and the length of time you use opiods play a major role. 
+        Opiods are highly addictive, in a large part due to the fact that they activate powerful reward centers in your brain.
+        Because doctors today are acutely aware of opiod risks it is often difficult to get your doctor to increae your dose, or even renew your prescription.
+        Some opiod users may even resort to finding alternative ways to increase their supply.
+      </p>
+    </div>
+    <div class="col-md-5">
+      <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto rounded-3 border shadow-lg" width="500" height="500" src="{% static 'images/pills1.jpg' %}" role="img"  preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#eee"/></img>
+
+    </div>
+  </div>
+
+  <hr class="featurette-divider">
+
+  <div class="row featurette">
+    <div class="col-md-7 order-md-2">
+      <h2 class="featurette-heading">Misuse Of Opiod Analgesics <span class="text-muted">A Public Concern.</span></h2>
+      <p class="lead">
+        Misue of opiod analgesics is an emergent global public concern. Codeine Phosphate, the primary OTC opiod has an identified abuse liability given its effect and 
+        development of tolerance within a short timeframe on regular or excessive use. Estimation and management of misuse of OTC codeine containing products are hampered by widespread
+        and easy avaialability as well as the heterogenous and hidden nature of misuse. Codeine containing products are widely purchased and eused. Whilst the majority of the customers appear
+        to have some awareness and knowledge of the risks, it does not materially impact their purchasing behaviour, with a substantial minority using such products on a daily basis.
+        This regularity of purchase whilst indicative of the popularity of such products may also be an inidicator of abuse. 
+
+      </p>
+    </div>
+    <div class="col-md-5 order-md-1">
+      <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto rounded-3 border shadow-lg" width="500" height="500" src="{% static 'images/pills2.jpg' %}" role="img"  preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#eee"/></img>
+
+    </div>
+  </div>
+
+  <hr class="featurette-divider">
+
+  <div class="row featurette">
+    <div class="col-md-7">
+      <h2 class="featurette-heading">Unlimited prescription quantities  <span class="text-muted">A potentially fatal flaw.</span></h2>
+      <p class="lead"> In 2018, the Canadian Community Health Survey(CCHS) asked canadians about their prescription and non prescription use of pain relief medications containing opiods such as codeine and morphine. 
+        Overall, 40.5% of Canadians aged 15 years and older (roughly 11.8 million people) reported they had used this type of pain relief product in their lifetimes. In the past 12 months, 12.7% of Canadians(roughly 3.7 million people)
+        reported they used OTC opiod pain relievers. The medications can manage pain effectively when used as directed, however excessive use can lead to dependence and tolernace. The problem is the addictive properties of opiods, and the reality that a substantial
+        number of users of OTC opiod medications will become addicted and may start on a destructive life altering journer. The fatal flaw in the use of what vould be safe and effective medications is that OTC opiod medications are available in unlimited quantities.
+        This creates a situation where substance abuse, if one is so inlclined is easily and inexpensively possible. An addict can easily walk into 15-20 pharmacies a day recieving up to 100 tablets from each, receiving little to no questions from the pharmacist.
+        Our patent pending computer program aims to identify and provent this type of abuse of the system.
+        
+
+
+      </p>
+    </div>
+    <div class="col-md-5">
+      <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto rounded-3 border shadow-lg" width="500" height="500" src="{% static 'images/dr2.jpg' %}" role="img"  preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#eee"/></img>
+
+    </div>
+  </div>
+  <hr class="featurette-divider">
+</div>
+
+
+<div class="b-example-divider"></div>
+
+<div class="b-example-divider"></div>
+<div class="px-4 py-5 my-5 text-center">
+  <img class="d-block mx-auto mb-4" src="{% static 'images/Logo.png' %}" alt="" width="72" height="57">
+  <h1 class="display-5 fw-bold">MedSafe works to prevent addictions from the start.</h1>
+  <div class="col-lg-6 mx-auto">
+    <p class="lead mb-4">
+      MedSafe is a patent pending computer program that works to identify the probability of substance abuse by a specific inidividula in a specific,
+      quantitative manner, and may do so often before the damage of an addiction or potential addiction is ingrained.
+    </p>
+    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+      <button type="button" class="btn btn-success btn-lg px-4 gap-3">Learn More</button>
+      <button type="button" class="btn btn-outline-success btn-lg px-4">How It works</button>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+  <div class="container px-4 py-5" id="icon-grid">
+    <h2 class="pb-2 border-bottom">Tools to identify and prevent addiction.</h2>
+
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+      <div class="col d-flex align-items-start">
+        <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#bootstrap"/></svg>
+        <div>
+          <h4 class="fw-bold mb-0">Prescription Accountability</h4>
+          <p>
+            Our patent pending program ensures all health care providers, as well as pharmacists will be heald accountable for every 
+            prescription they fill or issue to their patients.
+          </p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#cpu-fill"/></svg>
+        <div>
+          <h4 class="fw-bold mb-0">Smart Prescriptions</h4>
+          <p>A personal and confidential substance user file is created or updated when one purchases an OTC opiod. The purchaser must present their health card number,
+            which allows the provider to access and track all OTC prescriptions.
+
+          </p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#calendar3"/></svg>
+        <div>
+          <h4 class="fw-bold mb-0"> Smart Data</h4>
+          <p>Every OTC opiod purchase is scanned using the Viauard exclusive VASAP and saved to the patients private file at time of purchase allowing us to track all OTC purchases, prevent, abuse of
+            the system, and nip potential addiction in the bud.
+
+          </p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#home"/></svg>
+        <div>
+          <h4 class="fw-bold mb-0">Predictive Software</h4>
+          <p>Our patent pending software is able to analize a patients prescription history and identify and flag any potential addiction issues in the bud.
+
+          </p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#speedometer2"/></svg>
+        <div>
+          <h4 class="fw-bold mb-0">Patient Rankings</h4>
+          <p>Confidential patient rankings submitted by health care providers, after each interaction with a patient help keep a patient score, enabling us to identify 
+            potential substance, physical, or mental health issues and notify the patients physcician.
+
+          </p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#toggles2"/></svg>
+        <div>
+          <h4 class="fw-bold mb-0">Prescription Audits</h4>
+          <p>Our software is able to audit all prescriptions issued or filled by healthcare providers. Using this data we will be able to identify and apprehend 
+            any potential illegal or unprofessional subscription behaviour on the health care end as well as the patient end.
+
+          </p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#geo-fill"/></svg>
+        <div>
+          <h4 class="fw-bold mb-0">Open Communication</h4>
+          <p>
+           Our software enables open channels of communication between a patients physcician and pharmacist. They are able to see and directly contact one another
+           through the application.
+          </p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#tools"/></svg>
+        <div>
+          <h4 class="fw-bold mb-0">Accountability </h4>
+          <p>
+            Pysicans are required to provide a reason for issuing or reissuing a prescription, and pharmacists are required to provide a reason for refilling a prescription.
+            In additon, both have the option to add notes to a patients file at any time.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="b-example-divider"></div>
+
+
+
+  
+  <div class="b-example-divider"></div>
+
+  <div class="container col-xl-10 col-xxl-8 px-4 py-5">
+    <div class="row align-items-center g-lg-5 py-5">
+      <div class="col-lg-7 text-center text-lg-start">
+        <h1 class="display-4 fw-bold lh-1 mb-3">Subscribe </h1>
+        <p class="col-lg-10 fs-4">MedSafe is currently limited to Health Care Providers, but if you are a large business, financial insitituion, or 
+          government department please feel free to join our mailing list and receive updates on how we may be able to work with you in the future.
+
+        </p>
+      </div>
+      <div class="col-md-10 mx-auto col-lg-5">
+        <form class="p-4 p-md-5 border rounded-3 bg-light">
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Email address</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+            <label for="floatingPassword">Password</label>
+          </div>
+          <div class="checkbox mb-3">
+            <label>
+              <input type="checkbox" value="remember-me"> Remember me
+            </label>
+          </div>
+          <button class="w-100 btn btn-lg btn-success" type="submit">Subscribe</button>
+          <hr class="my-4">
+          <small class="text-muted">By clicking Sign up, you agree to the terms of use.</small>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="b-example-divider"></div>
+
+
+
+</div>
+
+{% endblock %}

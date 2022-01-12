@@ -1,0 +1,25 @@
+{% extends 'patients/base.html' %}
+{% block content%}
+
+
+
+{% load static %}
+
+<div class="card bg-dark text-white   " >
+   
+    <img src="{% static 'images/home.jpg' %}"class="img-fluid" alt="medSafe landing page image">
+    <div class="card-img-overlay" style="text-align: center;">
+      <div style="padding-top: 20%;">
+      <h1 class="card-title" style="text-align: center; font-weight: bolder; ">MedSafe</h1>
+      <h3 class="card-text  animate__animated animate__lightSpeedInRight animate__delay-1s" style="text-align: center; font-weight: bold; font-style: italic; ">For A Healthier Future</h3>
+      <br>
+      <a class="btn btn-primary animate__animated animate__bounce animate__repeat-3" href="{% url 'about'%}" role="button" style="align-self: center;">Learn More</a>
+    </div>
+      
+     
+    
+  </div>
+  </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,38 @@
+{% extends 'patients/base.html' %}
+{% block content%}
+
+
+
+{% load static %}
+
+
+<div>
+    <div>
+        <h1>Login</h1>
+        <p>Temporary Login Page For Testers </p>
+    </div>
+
+    <div>
+        <h2 style="color: red;">{{error}}</h2>
+
+        <div style="padding: 5%; background-color: skyblue;" >
+        <form action="" method="POST">
+        
+            
+        
+        {{form.as_p}}
+        {% csrf_token %}
+        
+        <button type="submit" class="btn btn-success">Log In</button>
+        
+        </form>
+        </div>
+        <br>
+    </div>
+
+
+
+</div>
+
+
+{% endblock %}

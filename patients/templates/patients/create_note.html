@@ -1,0 +1,22 @@
+{% extends 'patients/base2.html' %}
+{% block content%}
+
+
+
+{% load static %}
+
+<div>
+    <h1>Create Note</h1>
+</div>
+
+<form action="" method="POST">
+    {% csrf_token %}
+    {{form.as_p}}
+   
+
+    <input type="submit" class="btn btn-primary" value="Submit">
+
+</form>
+
+
+{% endblock %}

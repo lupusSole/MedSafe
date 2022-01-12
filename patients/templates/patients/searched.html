@@ -1,0 +1,37 @@
+{% extends 'patients/base2.html' %}
+{% block content%}
+
+
+
+{% load static %}
+
+<div>
+    {% if searched %}
+    <h1>You Searched For {{searched}}</h1>
+    {%else%}
+    <h1>Oops looks like you forgot to add a query</h1>
+
+    {% endif %}
+    <br>
+    <hr>
+    <div>
+
+       
+
+       {% for patient in patients %}
+       <div>
+           <h2>{{patient.healthNumber}}</h2>
+        <a href="{% url 'view_patient' patient.id %}">{{patient.name}}</a>
+       </div>
+       <br>
+       <hr>
+       
+
+       {% endfor %}
+     
+        
+    </div>
+</div>
+
+
+{% endblock %}

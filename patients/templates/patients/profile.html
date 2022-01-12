@@ -1,0 +1,96 @@
+{% extends 'patients/base2.html' %}
+{% block content%}
+
+
+
+{% load static %}
+<h2 style="font-weight: lighter; color: chartreuse;">{{success}}</h2>
+
+<div style="text-align: center; padding: 2.5%;">
+    <div>
+        <h1>Welcome  {{user.username}}</h1>
+    </div>
+    <br>
+
+    <div>
+        <a class="btn btn-success" href="{% url 'addPatient' %}">Add a new patient</a>
+        <br>
+        <hr>
+       
+            <div>
+                <h5 style="color: blue;">Search by health or medicare number</h5> 
+                
+                <form class="d-flex" method="POST" action="{% url 'search_results' %}">
+                    {% csrf_token %}
+                   
+                    <input class="form-control me-2" type="search" name="searched" placeholder="225-657-9903" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Find A Patient</button>
+                  </form>
+            </div>
+            <br>
+    </div>
+    <br>
+    <hr>
+
+    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <h1 class="h2">My Patients</h1>
+        <div class="btn-toolbar mb-2 mb-md-0">
+          <div class="btn-group me-2">
+            <button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
+            <button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
+          </div>
+          <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
+            <span data-feather="calendar"></span>
+            This Year
+          </button>
+        </div>
+      </div>
+    <div style="text-align: center;">
+       
+        </ul>
+        <br>
+        <div class="table-responsive">
+
+       
+
+        <table class ="table table-striped table-sm">
+            <th scope="col"> Patient Name</th>
+            <th scope="col"> Patient Number</th>
+            <th scope="col"> Patient Info</th>
+            <th scope="col"> Edit Patient</th>
+            <hr>
+            {% for patient in patients %}
+            <tr>
+                <td>{{patient.name}}</td>
+                <td>{{patient.healthNumber}}</td>
+                <td><a class="btn btn-primary" href="{% url 'view_patient' patient.id%}">Profile</a></td>
+                <td> <a class="btn btn-secondary" href="{% url 'edit_patient' patient.id%}">Update Patient</a></td>
+                
+
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+
+    </div>
+    <br>
+    <hr>
+
+
+    <div>
+        <div>
+            <h1 style="text-align: left">My Info</h1>
+
+        </div>
+        <h1>{{user.username}}</h1>
+        <a href="{% url 'createProfile' user.id%}" class="btn btn-success">Create My Public Profile</a>
+        <br>
+        <br>
+        <a href="{% url 'editProfile' user.id%}" class="btn btn-primary"> Edit My Public Profile</a>
+    </div>
+    <br>
+    <hr>
+    
+</div>
+
+{% endblock %}

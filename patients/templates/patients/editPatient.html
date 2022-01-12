@@ -1,0 +1,26 @@
+{% extends 'patients/base2.html' %}
+{% block content%}
+
+
+
+{% load static %}
+
+<div>
+    <h1>EditPatient</h1>
+    <br>
+    <hr>
+    <div>
+        <form action="" method="POST">
+            {% csrf_token %}
+            {{form.as_p}}
+           
+
+            <input type="submit" class="btn btn-success" value="Update">
+        
+        </form>
+        
+    </div>
+</div>
+
+
+{% endblock %}

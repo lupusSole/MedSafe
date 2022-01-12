@@ -1,0 +1,18 @@
+<h1>Edit My Profile</h1>
+{{error}}
+
+<div>
+
+    <div>
+        <form action="" method="POST">
+
+            {% csrf_token %}
+            {{form.as_p}}
+           
+        
+            <input type="submit" class="btn btn-primary" value="Save">
+        </form>
+
+    </div>
+</div>
+

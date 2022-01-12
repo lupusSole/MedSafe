@@ -1,0 +1,37 @@
+
+{% load static %}
+<h2 style="color: crimson;">{{error}}</h2>
+<h2 style="color: greenyellow;">{{success}}</h2>
+
+<div style="text-align: center;">
+    <div style="height: 75px;  align-content: center; background-color: cadetblue ">
+        <h1 style="color: cornsilk;">{{profile.businessName}} Public Profile</h1>
+
+    </div>
+   
+    <h2></h2>
+    <div>
+       <ul>
+           <li>Provider Name {{profile.providerName}}</li>
+           <li>Address {{profile.address}}</li>
+           <li> <a href="">{{profile.email}}</a></li>
+           <li> <a href="">{{profile.phoneNumber}}</a>  </li>
+           <li> <a href="">Book An Appointment</a> </li>
+
+       </ul>
+       <hr>
+       <br>
+       <p>
+        {{profile.notes}}
+
+       </p>
+       <hr>
+       <br>
+       <h5>This public profile belonging to {{profile.businessName}} was created on {{profile.created}}, by {{profile.providerName}}</h5>
+
+
+     
+
+    </div>
+</div>
+
